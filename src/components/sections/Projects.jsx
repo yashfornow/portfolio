@@ -111,6 +111,32 @@ export const Projects = () => {
                         </div>
                     </div>
 
+                    <div className = "p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                    <h3 className = "text-xl font-bold mb-2"> Restaurant App </h3>
+                    <p className = "text-gray-400 mb-4">  This application provides the food items. According to adjustment of items by user, total price and items are changed.
+                        </p>
+                        <div className = "flex flex-wrap gap-2 mb-4">
+                            {["React", "Bootstrap CSS", "State Management", "Redux Tool Kit"].map((items, key) => (
+                                <span
+                                key={key}
+                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                               hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+                                {items}
+                            </span>
+
+                            ))}
+                        </div>
+                        <div className="flex justify-between items-center">
+                            <a href = "https://yashfornow.github.io/restaurant/" target="_blank"
+                            className = "text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project 
+                            <i className="fa-solid fa-up-right-from-square pl-5"></i></a>
+                            <a href = "https://github.com/yashfornow/restaurant" target="_blank"
+                            className = "text-blue-400 hover:text-blue-300 transition-colors my-4 "> Github 
+                            <i className="fa-brands fa-github pl-5"></i> </a>
+                            
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
